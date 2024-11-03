@@ -1,0 +1,22 @@
+
+GET localhost:8000/api/posts
+Authorization: Bearer 16|aTV1GuPTUcz9BMiPJ77ctmETIW1uCvXtNBMPNchra7da49ef
+
+
+###
+
+
+DELETE localhost:8000/api/posts/4
+Authorization: Bearer 11|gRS61A15Dbwqs9CRPssvpt551q6tr4gqWtT31tGH82bf4b95
+Accept: application/json
+
+
+###
+PUT localhost:8000/api/posts/9
+Authorization: Bearer 14|86t64EE1VtW3MOEY96QVG6877KZX75SblWDriEKG3633134f
+Accept: application/json
+Content-Type: application/json
+
+{
+    "content": "fdfdffd"
+}

@@ -1,0 +1,11 @@
+### GET request to example server
+POST localhost:8000/api/posts/90/likes
+Accept: application/json
+Authorization: Bearer Bearer 16|aTV1GuPTUcz9BMiPJ77ctmETIW1uCvXtNBMPNchra7da49ef
+###
+
+### GET request to example server
+DELETE localhost:8000/api/posts/34/likes
+Accept: application/json
+Authorization: Bearer 15|MTae9uF5sWoTB5Nv3Na0EQltryQ2ywdXgFI7a8MS10d53a78
+

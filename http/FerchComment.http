@@ -1,0 +1,38 @@
+### GET request to example server
+
+GET localhost:8000/api/comments
+
+###
+
+GET localhost:8000/api/comments/1
+Accept: application/json
+
+###
+POST localhost:8000/api/comments
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer 14|86t64EE1VtW3MOEY96QVG6877KZX75SblWDriEKG3633134f
+
+{
+    "content": "benio",
+    "post_id": 9
+}
+
+###
+
+PUT localhost:8000/api/comments/55
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer 14|86t64EE1VtW3MOEY96QVG6877KZX75SblWDriEKG3633134f
+
+{
+    "content": "kupaaa",
+    "post_id": 9
+}
+
+###
+
+DELETE localhost:8000/api/comments/55
+Accept: application/json
+Authorization: Bearer 14|86t64EE1VtW3MOEY96QVG6877KZX75SblWDriEKG3633134f
+

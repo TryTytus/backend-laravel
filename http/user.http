@@ -1,0 +1,66 @@
+POST localhost:8000/api/users
+Content-Type: application/json
+
+{
+    "name": "Adam Tyton",
+    "nickname": "TryTytus",
+    "email": "adamtyton1@gmail.com",
+    "password": "#Dupa1234"
+}
+
+###
+
+GET localhost:8000/api/secret2
+#Authorization: Bearer 6|pGgobcQFPCZpqk9fzTvHJ6W2NAHZKOrofqLg9TeO404e0997
+
+
+###
+
+GET localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "email": "stacy.hermiston@example.net",
+    "password": "password"
+}
+
+###
+
+GET localhost:8000/api/users/1
+Authorization: Bearer 6|pGgobcQFPCZpqk9fzTvHJ6W2NAHZKOrofqLg9TeO404e0997
+
+
+###
+PUT http://localhost:8000/api/users/40
+Authorization: Bearer 9|uMReogzw9WvewXhOnwmPE14KHfmYIElo1osLlDT758e7fad1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "aaaaa",
+    "email": "test1@example.com",
+    "password": "password",
+    "nickname": "uwu"
+}
+
+
+###
+
+DELETE http://localhost:8000/api/users/1
+Authorization: Bearer 6|pGgobcQFPCZpqk9fzTvHJ6W2NAHZKOrofqLg9TeO404e0997
+Accept: application/json
+
+
+###
+
+POST http://localhost:8000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "aaaaa",
+    "email": "test1@example.com",
+    "password": "password",
+    "nickname": "uwu"
+}
+

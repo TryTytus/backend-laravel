@@ -22,10 +22,10 @@ class DatabaseSeeder extends Seeder
 //        }
 
 
-//        foreach (range(1, 40) as $i)
-//        {
-//            Post::factory()->create();
-//        }
+        foreach (range(1, 40) as $i)
+        {
+            Post::factory()->create();
+        }
 
 
         foreach (range(1, 50) as $i)

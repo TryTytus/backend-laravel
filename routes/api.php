@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 
+use Illuminate\Support\Facades\Storage;
 use \Illuminate\Support\Facades\Auth;
 
 Route::get('/user', function (Request $request) {
@@ -72,6 +73,32 @@ Route::get('/login', function (Request $request) {
     return response()->json(['error' => 'Unauthorized'], 401);
 
 })->name('login');
+
+
+Route::get('dupaaa', fn () => 'duppaa');
+
+Route::post('/send', function (Request $request) {
+
+//    \Illuminate\Support\Facades\Validator::make($request->all(), [
+//        'file' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+//    ])->validate();
+
+
+
+    $request->validate([
+       'file' => 'required|file|mimes:jpeg,jpg,png|max:2048',
+    ]);
+
+    $file = $request->file('file');
+
+
+    $file->store('public', ['disk' => 'public']);
+
+
+
+    $path = 'sddsd';
+    return response()->json(['path' => $path]);
+});
 
 
 
